@@ -18,18 +18,23 @@ public void draw()
   bob.move();
 }
 public void keyPressed(){
-  if (key == 'l'){
+  //spaceship turns right
+  if (key == 'r'){
     bob.turn(45);
   }
-  else if (key == 'r'){
+  //spaceship turns left
+  else if (key == 'l'){
     bob.turn(-45);
   }
+  //spaceship accelerates
   else if (key == 'a'){
     bob.accelerate(0.2);
   }
+  //spaceship decelerates
   else if (key == 'd'){
     bob.accelerate(-0.2);
   }
+  // hyperspace
   else if (key == 'h'){
     bob.hyperspace();
   }
